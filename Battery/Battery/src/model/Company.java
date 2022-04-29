@@ -74,7 +74,7 @@ public class Company{
         for(int i=0;i<MAX_BATTERIES;i++){
             if(batteries[i]!=null){
                 if(batteries[i] instanceof RechargeableBattery){
-                    str+= (((RechargeableBattery)batteries[i]).calculateUsefullLifeCost())/counterRB;
+                    str+= ((RechargeableBattery)batteries[i]).calculateUsefullLifeCost()/counterRB;
                 }
             }
         }
